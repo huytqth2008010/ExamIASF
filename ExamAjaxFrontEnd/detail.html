@@ -26,7 +26,7 @@
 <div class="w3-container">
     <div class="w3-row w3-margin">
         <a href="index.html?name="><< Black</a>
-        <h2>detail article</h2>
+        <h2>Detail employee</h2>
     </div>
     <div class="w3-row w3-margin">
         <table id="employee-table">
@@ -34,6 +34,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Wage</th>
+                <th>Action</th>
             </tr>
         </table>
     </div>
@@ -55,7 +56,6 @@
                                             <td>${element.wage}</td>
                                         <td class="w3-margin">
                                                 <a href="form.html?id=${element.id}"> <i class="fa fa-edit"></i></a>
-                                                <a href="detail.html?id=${element.id}"> <i class="fa fa-exclamation-circle"></i></a>
                                                 <i class="fa fa-trash" onclick="deleteProduct(${element.id})"></i>
                                         </td>
                                     </tr>`;
